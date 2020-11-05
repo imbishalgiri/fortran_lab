@@ -23,8 +23,10 @@ program quizgame
     print *, "this is a simple BMI calculator "
     print *, "please enter your weight(in kg):"
     read *, weight
+
     print *, "please enter your height(in metre):"
     read *, height
+
     bmi = weight / (height ** 2)
 
     if (bmi < 18.5) then
@@ -36,4 +38,5 @@ program quizgame
     else
       print *, "extremely bad health!!!! you're obese!!"
     end if
+    
 end program quizgame

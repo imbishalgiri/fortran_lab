@@ -8,19 +8,29 @@
 !       Author: Bishal Giri (bishal.171743@ncit.edu.np)
 !------------------------------------------------------------
 ! Demonstration of simple program in Fortran that uses 
-! some primitive variables 
+! Do loop 
 !------------------------------------------------------------
 
-! A simple program to calculate velocity !
+! program to print fibonacci numbers
+! ------------------------------------
 
-program velocity
+program fibonacci
 
       implicit none
 
-      real :: s,t,v 
-      t = 4.0
-      v = s / t
+      integer :: first = 0, second = 1, third, userChoice, loopCount
 
-      print *, "the velocity is ", v
+      print *, "how many fibonacci number should i generate???"
+      read *, userChoice
+      print *, first
+      print *, second
+      
+      do loopcount = 1, userChoice - 2
+        third = first + second
+        print *, third
+        first = second
+        second = third
+      end do
 
- end program velocity     
+end program fibonacci
+
