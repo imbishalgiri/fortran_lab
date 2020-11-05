@@ -14,7 +14,7 @@
 ! A SIMPLE PROGRAM THAT CALCULATES BMI
 ! ------------------------------------
 
-program quizgame
+program bmiCalc 
     
     implicit none
     
@@ -38,5 +38,5 @@ program quizgame
     else
       print *, "extremely bad health!!!! you're obese!!"
     end if
-    
-end program quizgame
+   
+end program bmiCalc 
